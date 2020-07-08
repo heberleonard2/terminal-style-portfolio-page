@@ -94,7 +94,7 @@ async function getInputValue(){
   }
   else if(value === "social"){
     trueValue(value);
-    createText("Didn't you mean: social -all?")
+    createText("Didn't you mean: social -a?")
   }
   
   else if(value === "clear"){
