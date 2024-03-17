@@ -27,6 +27,7 @@ async function open_terminal() {
   createCode("about me", "Who am i and what do i do.");
   createCode("all", "See all commands.");
   createCode("social -a", "All my social networks.");
+  createCode("contact", "Contact me over Email.");
 
   await delay(500);
   new_line();
@@ -93,13 +94,16 @@ async function getInputValue() {
     createText(
       "<a href='https://www.instagram.com/behnamghafary/' target='_blank'><i class='fab fa-instagram white'></i> instagram.com/behnamghafary</a>"
     );
+    createText(
+      "<a href='mailto:behnam.ghafary@gmail.com' target='_blank'><i class='fa fa-envelope white'></i> behnam.ghafary@gmail.com</a>"
+    );
   } else if (value === "social") {
     trueValue(value);
     createText("Didn't you mean: social -a?");
   } else if (value === "contact") {
     trueValue(value);
     createText(
-      "<a href='mailto:behnam.ghafary@gmail.com' target='_blank'><i class='fab fa-envelope white'></i> behnam.ghafary@gmail.com</a>"
+      "<a href='mailto:behnam.ghafary@gmail.com' target='_blank'><i class='fa fa-envelope white'></i> behnam.ghafary@gmail.com</a>"
     );
   } else if (value === "clear") {
     document.querySelectorAll("p").forEach((e) => e.parentNode.removeChild(e));
