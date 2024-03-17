@@ -61,7 +61,7 @@ function removeInput() {
 }
 
 async function getInputValue() {
-  const value = document.querySelector("input").value;
+  const value = document.querySelector("input").value.trim().toLowerCase();
   if (value === "all") {
     trueValue(value);
 
