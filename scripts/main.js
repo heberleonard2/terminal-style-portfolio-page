@@ -27,7 +27,7 @@ async function open_terminal() {
   createCode("about me", "Who am i and what do i do.");
   createCode("all", "See all commands.");
   createCode("social -a", "All my social networks.");
-  createCode("contact", "Contact me over Email.");
+  createCode("contact", "Contact me via Email.");
 
   await delay(500);
   new_line();
