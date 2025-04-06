@@ -103,7 +103,7 @@ async function getInputValue(){
   }
   else{
     falseValue(value);
-    createText(`command not found: ${value}`)
+    createErrorText(`command not found: ${value}`)
   }
 }
 
@@ -149,6 +149,12 @@ function createCode(code, text){
   p.setAttribute("class", "code");
   p.innerHTML =
  `${code} <br/><span class='text'> ${text} </span>`;
+  app.appendChild(p);
+}
+
+function createErrorText(text) {
+  const p = document.createElement("p");
+  p.innerText = text;
   app.appendChild(p);
 }
 
